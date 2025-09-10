@@ -1,0 +1,3 @@
+[ ] Buy groceries
+[x] Walk the dog
+[ ] Finish project

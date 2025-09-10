@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Terminal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1e1e1e;
+            color: #00ff00;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .terminal {
+            background: #000;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,255,0,0.3);
+            max-width: 800px;
+        }
+        .prompt {
+            color: #00ff00;
+            font-weight: bold;
+        }
+        .output {
+            color: #ffffff;
+            margin-left: 0;
+            white-space: pre-wrap;
+        }
+        .header {
+            color: #888;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">📁 todo.py - Terminal Output</div>
+        <div class="prompt">$ python3 todo.py</div>
+        <div class="output">Todo App Commands:
+  add <task>     - Add a new task
+  list           - Show all tasks
+  complete <num> - Mark task as complete
+  help           - Show this help
+</div>
+        <div class="prompt">$ </div>
+    </div>
+</body>
+</html>
