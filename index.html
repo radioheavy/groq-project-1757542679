@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo App</h1>
+            <p>Manage your tasks efficiently</p>
+        </header>
+
+        <main>
+            <section class="task-input-section" aria-label="Add new task">
+                <form id="task-form" class="task-form">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="task-input" 
+                            placeholder="Enter a new task..." 
+                            required
+                            aria-label="Task description"
+                            maxlength="200"
+                        >
+                        <button type="submit" id="add-task-btn" aria-label="Add task">
+                            Add Task
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="task-list-section" aria-label="Task list">
+                <div class="task-controls">
+                    <div class="task-stats">
+                        <span id="task-count">0 tasks</span>
+                        <span id="completed-count">0 completed</span>
+                    </div>
+                    <div class="file-controls">
+                        <button id="export-btn" aria-label="Export tasks to file">Export</button>
+                        <input type="file" id="import-input" accept=".txt" style="display: none;">
+                        <button id="import-btn" aria-label="Import tasks from file">Import</button>
+                    </div>
+                </div>
+
+                <ul id="task-list" class="task-list" role="list">
+                    <!-- Tasks will be dynamically added here -->
+                </ul>
+
+                <div id="empty-state" class="empty-state">
+                    <p>No tasks yet. Add your first task above!</p>
+                </div>
+            </section>
+
+            <section class="terminal-section" aria-label="Terminal interface">
+                <h2>Terminal Interface</h2>
+                <div class="terminal">
+                    <div class="header">📁 todo.py - Terminal Output</div>
+                    <div class="prompt">$ python3 todo.py</div>
+                    <div class="output">Todo App Commands:
+  add &lt;task&gt;     - Add a new task
+  list           - Show all tasks
+  complete &lt;num&gt; - Mark task as complete
+  help           - Show this help
+</div>
+                    <div class="prompt">$ </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
